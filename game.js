@@ -202,12 +202,12 @@ kaboom({
     });
    
     keyDown("left", () => {
-        player.flipY = false;
+        player.sprite("mario");
         player.move(-MOVE_SPEED, 0);
     });
    
     keyDown("right", () => {
-        player.flipY = true;
+        player.sprite("shroom");
         player.move(MOVE_SPEED, 0);
     });
    
