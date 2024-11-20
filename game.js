@@ -29,6 +29,7 @@ kaboom({
   loadSprite("mario", "mario.png");
   loadSprite("evil-shroom", "goomba.png");
   loadSprite("mushroom", "shroom.png");
+  loadSprite("luigi", "luigi.png");
   loadRoot("https://i.imgur.com/");
   
   loadSprite("pipe-top-left", "ReTPiWY.png");
@@ -202,12 +203,12 @@ kaboom({
     });
    
     keyDown("left", () => {
-        player.sprite("mario");
+        player.use(sprite('mario'));
         player.move(-MOVE_SPEED, 0);
     });
    
     keyDown("right", () => {
-        player.sprite("shroom");
+        player.use(sprite('luigi'));
         player.move(MOVE_SPEED, 0);
     });
    
