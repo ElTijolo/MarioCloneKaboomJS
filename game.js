@@ -26,9 +26,10 @@ kaboom({
   loadSprite("brick", "brick.png");
   loadSprite("block", "brick.png");
   loadSprite("unboxed", "block2.png");
+  loadSprite("mario", "mario.png");
   loadRoot("https://i.imgur.com/");
   loadSprite("evil-shroom", "KPO3fR9.png");
-  loadSprite("mario", "Wb1qfhK.png");
+  
   loadSprite("mushroom", "0wMd92p.png");
   
   loadSprite("pipe-top-left", "ReTPiWY.png");
