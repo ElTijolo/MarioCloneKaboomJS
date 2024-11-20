@@ -22,14 +22,15 @@ kaboom({
    
   loadRoot("https://raw.githubusercontent.com/ElTijolo/MarioCloneKaboomJS/refs/heads/main/");
   loadSprite("coin", "9BsE4l.png");
+  loadSprite("surprise", "block.png");
+  loadSprite("brick", "brick.png");
+  loadSprite("block", "brick.png");
+  loadSprite("unboxed", "block2.png");
   loadRoot("https://i.imgur.com/");
   loadSprite("evil-shroom", "KPO3fR9.png");
-  loadSprite("brick", "pogC9x5.png");
-  loadSprite("block", "M6rwarW.png");
   loadSprite("mario", "Wb1qfhK.png");
   loadSprite("mushroom", "0wMd92p.png");
-  loadSprite("surprise", "gesQ1KP.png");
-  loadSprite("unboxed", "bdrLpi6.png");
+  
   loadSprite("pipe-top-left", "ReTPiWY.png");
   loadSprite("pipe-top-right", "hj2GK4n.png");
   loadSprite("pipe-bottom-left", "c1cYSbt.png");
