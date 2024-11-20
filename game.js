@@ -20,8 +20,8 @@ kaboom({
    
   let isJumping = true;
    
-  loadRoot("https://www.spriters-resource.com/resources/sheet_icons/204/");
-  loadSprite("coin", "207271.png");
+  loadRoot("https://raw.githubusercontent.com/ElTijolo/MarioCloneKaboomJS/refs/heads/main/");
+  loadSprite("coin", "9BsE4l.png");
   loadRoot("https://i.imgur.com/");
   loadSprite("evil-shroom", "KPO3fR9.png");
   loadSprite("brick", "pogC9x5.png");
@@ -201,11 +201,13 @@ kaboom({
     });
    
     keyDown("left", () => {
-      player.move(-MOVE_SPEED, 0);
+        player.flipY = false;
+        player.move(-MOVE_SPEED, 0);
     });
    
     keyDown("right", () => {
-      player.move(MOVE_SPEED, 0);
+        player.flipY = true;
+        player.move(MOVE_SPEED, 0);
     });
    
     player.action(() => {
@@ -223,7 +225,11 @@ kaboom({
   });
    
   scene("lose", ({ score }) => {
-    add([text(score, 32), origin("center"), pos(width() / 2, height() / 2)]);
+    add([text('Game Over !', 32), origin("center"), pos(width() / 2, height() / 2 - 50)]);
+    add([text(`Score : ${score}`, 32), origin("center"), pos(width() / 2, height() / 2)]);
+    keyPress("space", () => {
+        go("game", { level: 0, score: 0 });
+    });
   });
    
   start("game", { level: 0, score: 0 });
