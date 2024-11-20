@@ -20,8 +20,9 @@ kaboom({
    
   let isJumping = true;
    
+  loadRoot("https://www.spriters-resource.com/resources/sheet_icons/204/");
+  loadSprite("coin", "207271.png");
   loadRoot("https://i.imgur.com/");
-  loadSprite("coin", "wbKxhcd.png");
   loadSprite("evil-shroom", "KPO3fR9.png");
   loadSprite("brick", "pogC9x5.png");
   loadSprite("block", "M6rwarW.png");
